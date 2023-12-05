@@ -2,6 +2,7 @@
 h1 {
 	font-size: 40px;
 	font-weight: bold;
+	margin: 10px;
 }
 
 #profil {
@@ -12,6 +13,10 @@ h1 {
 	text-align: center;
 	justify-content: center;
 }
+#profil p{
+	margin: 10px;
+}
+
 #photo_profil {
 	border-radius: 50%;
 	width: 150px;

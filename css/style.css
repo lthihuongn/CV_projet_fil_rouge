@@ -58,6 +58,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: bold;
+  margin: 10px;
 }
 
 #profil {
@@ -67,6 +68,10 @@ h1 {
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+#profil p {
+  margin: 10px;
 }
 
 #photo_profil {
@@ -235,8 +240,8 @@ footer {
   #menuToggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
