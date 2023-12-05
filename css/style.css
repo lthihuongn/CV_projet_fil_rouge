@@ -299,6 +299,7 @@ footer {
   #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
+  
   #menu {
     position: absolute;
     width: 300px;
