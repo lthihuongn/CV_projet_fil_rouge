@@ -1,0 +1,27 @@
+header {
+	background-color: $background-main_color;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+	padding-bottom: 20px;
+	nav {
+		ul {
+			display: flex;
+			text-transform: uppercase;
+			gap: 20px;
+		}
+		a {
+			color: $white;
+		}
+	}
+	li {
+		list-style: none;
+	}
+}
+
+#menuToggle {
+	input {
+		opacity: 0;
+	}
+}

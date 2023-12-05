@@ -1,0 +1,101 @@
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#profil {
+	background-color: $background-white;
+	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+#photo_profil {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.coordonnees {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 250px;
+	padding: 10px;
+	flex: 1;
+}
+
+.case {
+	display: flex;
+	min-height: 400px;
+}
+.section {
+	flex: 1;
+	text-align: center;
+}
+.titre_blanc {
+	padding-bottom: 10px;
+	margin: 20px;
+	text-align: left;
+	border-bottom: 2px solid $white;
+}
+.titre_noir {
+	padding-bottom: 10px;
+	margin: 20px;
+	text-align: left;
+	border-bottom: 2px solid $black;
+}
+.texte {
+	background-color: $background-main_color;
+	color: $white;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	display: flex;
+	padding: 10px;
+	flex: 1;
+}
+.gauche {
+	flex-direction: column;
+	padding-right: 20px;
+}
+.date {
+	padding-top: 20px;
+}
+.droite {
+	border-left: 2px solid $white;
+	text-align: left;
+	padding-left: 20px;
+}
+.images {
+	background-image: url("/images/blue.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.align {
+	display: flex;
+}
+.image {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.contact {
+	background-color: $background-color_1;
+	background: repeating-linear-gradient( 45deg, rgb(223, 223, 224), rgb(223, 223, 224) 5px, white 5px, white 25px );
+	color: $black;
+}
+
+#contact{
+	margin-bottom: 20px;
+}
+
+.contact2 {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	position: relative;
+}

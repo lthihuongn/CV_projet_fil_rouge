@@ -1,0 +1,24 @@
+svg {
+	&:hover {
+		fill: $color_hover;
+	}
+}
+a {
+	&:hover {
+		color: $color_hover;
+		cursor: pointer;
+	}
+}
+
+.rotate {
+	transition: transform 0.5s;
+	&:hover {
+		transform: rotate(360deg);
+	}
+}
+.drapeaux {
+	transition: all 3s;
+	&:hover {
+		transform: perspective(25px) rotateX(20deg);
+	}
+}

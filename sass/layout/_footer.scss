@@ -1,0 +1,18 @@
+footer {
+	background-color: $background-black;
+	color: $white;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.icones {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 50px;
+	svg {
+		width: 30px;
+		margin-left: 10px;
+	}
+}

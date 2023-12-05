@@ -1,31 +1,63 @@
-html {
+svg:hover {
+  fill: rgb(50, 180, 236);
+}
+
+a:hover {
+  color: rgb(50, 180, 236);
+  cursor: pointer;
+}
+
+.rotate {
+  transition: transform 0.5s;
+}
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+.drapeaux {
+  transition: all 3s;
+}
+.drapeaux:hover {
+  transform: perspective(25px) rotateX(20deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+.bouton {
+  border-radius: 30px;
+  background-color: rgb(50, 180, 236);
+  border-color: transparent;
+  color: white;
+  width: 204px;
+  height: 50px;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.bouton:hover {
+  transform: scale(1.1);
+}
+
+.espace_bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 h1 {
   font-size: 40px;
   font-weight: bold;
-}
-header {
-  background-color: rgb(52, 60, 118);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-}
-header nav ul {
-  display: flex;
-  text-transform: uppercase;
-  gap: 20px;
-  
-}
-header li {
-  list-style: none;
-
-}
-
-header nav a{
-  color: white
 }
 
 #profil {
@@ -36,57 +68,41 @@ header nav a{
   text-align: center;
   justify-content: center;
 }
-#donilde {
+
+#photo_profil {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 0%;
-  
-}
+
 .coordonnees {
   display: flex;
   justify-content: space-between;
-  margin-right: 250px;
-  margin-left: 250px;
+  align-items: center;
+  margin: 0 250px;
   padding: 10px;
-  flex-wrap: wrap;
   flex: 1;
 }
-
-svg:hover{
-  fill: rgb(82, 159, 222);
-}
-
-a:hover {
-  color: grey;
-  cursor: pointer;
-}
-
 
 .case {
   display: flex;
-  height: 550px;
- 
-  
+  min-height: 400px;
 }
+
 .section {
   flex: 1;
   text-align: center;
-  height: 100%;
 }
 
-.titre_blanc{
-  padding-bottom: 10px ;
+.titre_blanc {
+  padding-bottom: 10px;
   margin: 20px;
   text-align: left;
   border-bottom: 2px solid white;
 }
 
-.titre_noir{
-  padding-bottom: 10px ;
+.titre_noir {
+  padding-bottom: 10px;
   margin: 20px;
   text-align: left;
   border-bottom: 2px solid black;
@@ -97,286 +113,204 @@ a:hover {
   color: white;
   justify-content: center;
   align-items: center;
-  
 }
-  
-  .box {
-    display: flex;
-    padding: 10px;
-    flex: 1;
-  }
 
-  .gauche {
-    
-    flex-direction: column;
-    padding-right: 20px;
-  }
+.box {
+  display: flex;
+  padding: 10px;
+  flex: 1;
+}
 
-  .date{
-    padding-top: 20px;
-  }
+.gauche {
+  flex-direction: column;
+  padding-right: 20px;
+}
 
+.date {
+  padding-top: 20px;
+}
 
-  .droite {
-    border-left: 2px solid white;
-    text-align: left;
-    padding-left: 20px;
-  }
-
+.droite {
+  border-left: 2px solid white;
+  text-align: left;
+  padding-left: 20px;
+}
 
 .images {
   background-image: url("/images/blue.jpg");
   background-size: cover;
   background-attachment: fixed;
-  
-  
 }
 
 .align {
   display: flex;
 }
 
-
-.image{
-  padding-top: 150px;
-  padding-bottom: 150px;
+.image {
+  margin-top: 100px;
+  margin-bottom: 100px;
   position: relative;
-  
-}
-
-.rotate{
-  transition: transform 0.5s;
-}
-
-.rotate:hover {
-  transform: rotate(360deg);
-}
-
-.drapeaux{
-  transition: all 3s;
-}
-.drapeaux:hover {
-  transform: perspective(25px) rotateX(20deg);
-}
-
-.competences1 {
-  background-color: rgrgb(52, 60, 118);
-  color: #464545;
-  list-style: none;
-  color: white;
-  
 }
 
 .contact {
   background-color: #ffffff;
-  background: repeating-linear-gradient( 45deg, rgb(223, 223, 224), rgb(223, 223, 224) 5px, white 5px, white 25px );
+  background: repeating-linear-gradient(45deg, rgb(223, 223, 224), rgb(223, 223, 224) 5px, white 5px, white 25px);
   color: black;
-
-
-  
 }
 
-
-.bouton {
-    border-radius: 30px;
-    background-color: rgb(52, 60, 118) ;
-    border: 2px solid rgb(52, 60, 118);
-    color: white;
-    width: 204px;
-    height: 50px;
-    flex-direction: column;
-    cursor: pointer;
-    transition: transform 0.3s;
+#contact {
+  margin-bottom: 20px;
 }
 
-.bouton:hover{
-  transform: scale(1.1);
+.contact2 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  position: relative;
 }
 
-.espace_bouton{
+header {
+  background-color: rgb(52, 60, 118);
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  
-  
+  padding-bottom: 20px;
+}
+header nav ul {
+  display: flex;
+  text-transform: uppercase;
+  gap: 20px;
+}
+header nav a {
+  color: white;
+}
+header li {
+  list-style: none;
 }
 
-
+#menuToggle input {
+  opacity: 0;
+}
 
 footer {
   background-color: black;
   color: white;
   padding: 5px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .icones {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 50px;
 }
-
 .icones svg {
   width: 30px;
   margin-left: 10px;
 }
 
-
-
 @media screen and (max-width: 600px) {
-  .case {
+  .coordonnees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+  }
+  section.case {
     flex-direction: column;
     height: 100%;
   }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+  ul {
+    flex-direction: column;
   }
-
-  #menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+  header {
+    justify-content: left !important;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover {
+    color: rgb(50, 180, 236);
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: black;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
 }
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-}
+/*# sourceMappingURL=style.css.map */
