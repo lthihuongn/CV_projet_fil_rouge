@@ -40,7 +40,6 @@ body {
   color: black;
   width: 204px;
   height: 50px;
-  flex-direction: column;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -104,17 +103,11 @@ h1 {
   margin: 20px;
   text-align: left;
   border-bottom: 2px solid white;
-}
-
-.titre_noir {
-  padding-bottom: 10px;
-  margin: 20px;
-  text-align: left;
-  border-bottom: 2px solid black;
+  color: white;
 }
 
 .texte {
-  background-color: rgb(52, 60, 118);
+  background-color: rgb(11, 18, 65);
   color: white;
   justify-content: center;
   align-items: center;
@@ -123,6 +116,7 @@ h1 {
 .box {
   display: flex;
   padding: 10px;
+  padding-inline: 1.3em;
   flex: 1;
 }
 
@@ -142,9 +136,10 @@ h1 {
 }
 
 .images {
-  background-image: url("../images/blue.jpg");
+  background-image: url("../images/blue2.jpg");
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 }
 
 .align {
@@ -155,6 +150,10 @@ h1 {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
+}
+
+.image p {
+  margin: 10px;
 }
 
 .contact {
@@ -174,7 +173,7 @@ h1 {
 }
 
 header {
-  background-color: rgb(52, 60, 118);
+  background-color: rgb(104, 97, 155);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -217,7 +216,7 @@ footer {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 716px) {
   .coordonnees {
     display: flex;
     justify-content: space-between;
