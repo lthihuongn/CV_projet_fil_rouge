@@ -137,7 +137,7 @@ h1 {
 }
 
 .images {
-  background-image: url("/images/blue.jpg");
+  background-image: url("../images/blue.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
